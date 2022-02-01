@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://projecteuler.net/minimal=490
+* At UTC time: 2022-02-01 15:37:40.487539
+
+--><body><p>There are <var>n</var> stones in a pond, numbered 1 to <var>n</var>. Consecutive stones are spaced one unit apart.</p>
+
+<p>A frog sits on stone 1. He wishes to visit each stone exactly once, stopping on stone <var>n</var>. However, he can only jump from one stone to another if they are at most 3 units apart. In other words, from stone <var>i</var>, he can reach a stone <var>j</var> if 1 &#8804; <var>j</var> &#8804; <var>n</var> and <var>j</var> is in the set {<var>i</var>-3, <var>i</var>-2, <var>i</var>-1, <var>i</var>+1, <var>i</var>+2, <var>i</var>+3}.</p>
+
+<p>Let f(<var>n</var>) be the number of ways he can do this. For example, f(6) = 14, as shown below:<br>
+1 &#8594; 2 &#8594; 3 &#8594; 4 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 2 &#8594; 3 &#8594; 5 &#8594; 4 &#8594; 6 <br>
+1 &#8594; 2 &#8594; 4 &#8594; 3 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 2 &#8594; 4 &#8594; 5 &#8594; 3 &#8594; 6 <br>
+1 &#8594; 2 &#8594; 5 &#8594; 3 &#8594; 4 &#8594; 6 <br>
+1 &#8594; 2 &#8594; 5 &#8594; 4 &#8594; 3 &#8594; 6 <br>
+1 &#8594; 3 &#8594; 2 &#8594; 4 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 3 &#8594; 2 &#8594; 5 &#8594; 4 &#8594; 6 <br>
+1 &#8594; 3 &#8594; 4 &#8594; 2 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 3 &#8594; 5 &#8594; 2 &#8594; 4 &#8594; 6 <br>
+1 &#8594; 4 &#8594; 2 &#8594; 3 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 4 &#8594; 2 &#8594; 5 &#8594; 3 &#8594; 6 <br>
+1 &#8594; 4 &#8594; 3 &#8594; 2 &#8594; 5 &#8594; 6 <br>
+1 &#8594; 4 &#8594; 5 &#8594; 2 &#8594; 3 &#8594; 6</p>
+
+<p>Other examples are f(10) = 254 and f(40) = 1439682432976.</p>
+
+<p>Let S(<var>L</var>) = &#8721; f(<var>n</var>)<sup>3</sup> for 1 &#8804; <var>n</var> &#8804; <var>L</var>.<br>
+Examples:<br>
+S(10) = 18230635<br>
+S(20) = 104207881192114219<br>
+S(1 000) mod 10<sup>9</sup> = 225031475<br>
+S(1 000 000) mod 10<sup>9</sup> = 363486179</p>
+
+<p>Find S(10<sup>14</sup>) mod 10<sup>9</sup>.</p>
+
+</body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://projecteuler.net/minimal=558
+* At UTC time: 2022-02-01 15:39:59.160358
+
+--><body><p>Let <var>r</var> be the real root of the equation <var>x</var><sup>3</sup>&#160;=&#160;<var>x</var><sup>2</sup>&#160;+&#160;1.<br>
+Every positive integer can be written as the sum of distinct increasing powers of <var>r</var>.<br>
+If we require the number of terms to be finite and the difference between any two exponents to be three or more, then the representation is unique.<br>
+For example, 3&#160;=&#160;<var>r</var><sup>&#160;-10</sup>&#160;+&#160;<var>r</var><sup>&#160;-5</sup>&#160;+&#160;<var>r</var><sup>&#160;-1</sup>&#160;+&#160;<var>r</var><sup>&#160;2</sup> and 10&#160;=&#160;<var>r</var><sup>&#160;-10</sup>&#160;+&#160;<var>r</var><sup>&#160;-7</sup>&#160;+&#160;<var>r</var><sup>&#160;6</sup>.<br>
+Interestingly, the relation holds for the complex roots of the equation.</p>
+
+<p>Let <var>w</var>(<var>n</var>) be the number of terms in this unique representation of <var>n</var>. Thus <var>w</var>(3)&#160;=&#160;4 and <var>w</var>(10)&#160;=&#160;3.</p>
+
+<p>More formally, for all positive integers <var>n</var>, we have:<br><var>n</var> = $\displaystyle \sum_{k=-\infty}^{\infty}$ <var>b<sub>k</sub>&#160;r<sup>k</sup></var><br>
+under the conditions that:<br><var>b<sub>k</sub></var> is 0 or 1 for all <var>k</var>;<br><var>b<sub>k</sub></var>&#160;+&#160;<var>b</var><sub><var>k</var>+1</sub>&#160;+&#160;<var>b</var><sub><var>k</var>+2</sub>&#160;&#8804;&#160;1 for all <var>k</var>;<br><var>w</var>(<var>n</var>) = $\displaystyle \sum_{k=-\infty}^{\infty}$ <var>b<sub>k</sub></var> is finite.</p>
+
+<p>Let S(<var>m</var>)&#160;= $\displaystyle \sum_{j=1}^{m}$ <var>w</var>(<var>j</var><sup>2</sup>).<br>
+You are given S(10) = 61 and S(1000) = 19403.</p>
+
+<p>Find S(5 000 000).</p>
+
+</body></html>

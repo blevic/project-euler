@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://projecteuler.net/minimal=675
+* At UTC time: 2022-02-01 15:43:51.604906
+
+--><body><p>
+Let $\omega(n)$ denote the number of distinct prime divisors of a positive integer $n$.<br>
+So  $\omega(1) = 0$ and  $\omega(360) = \omega(2^{3} \times 3^{2} \times 5) = 3$.
+</p>
+<p>
+Let $S(n)$ be $ \Sigma_{d | n} 2^{\omega(d)}  $.
+<br>
+E.g. $S(6) = 2^{\omega(1)}+2^{\omega(2)}+2^{\omega(3)}+2^{\omega(6)} = 2^0+2^1+2^1+2^2 = 9$.
+</p>
+<p>
+Let $F(n)=\Sigma_{i=2}^n S(i!)$.
+$F(10)=4821.$
+</p>
+<p>
+Find $F(10\,000\,000)$. Give your answer modulo  $1\,000\,000\,087$.
+</p>
+
+</body></html>

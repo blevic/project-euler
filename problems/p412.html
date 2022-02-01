@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://projecteuler.net/minimal=412
+* At UTC time: 2022-02-01 15:35:06.732941
+
+--><body><p>For integers <var>m</var>, <var>n</var> (0&#160;&#8804;&#160;<var>n</var>&#160;&lt;&#160;<var>m</var>), let L(<var>m</var>,&#160;<var>n</var>) be an <var>m</var>&#215;<var>m</var> grid with the top-right <var>n</var>&#215;<var>n</var> grid removed.</p>
+
+<p>For example, L(5, 3) looks like this:</p>
+
+<p class="center"><img src="project/images/7f437f6d__p412_table53.png" alt="p412_table53.png"></p>
+
+<p>We want to number each cell of L(<var>m</var>,&#160;<var>n</var>) with consecutive integers 1, 2, 3, ... such that the number in every cell is smaller than the number below it and to the left of it.</p>
+
+<p>For example, here are two valid numberings of L(5,&#160;3):</p>
+<p class="center"><img src="project/images/10c92676__p412_tablenums.png" alt="p412_tablenums.png"></p>
+
+<p>Let LC(<var>m</var>, <var>n</var>) be the number of valid numberings of L(<var>m</var>, <var>n</var>).<br>
+It can be verified that LC(3,&#160;0) = 42, LC(5,&#160;3) = 250250, LC(6,&#160;3) = 406029023400 and LC(10,&#160;5) mod 76543217 = 61251715.</p>
+
+<p>Find LC(10000,&#160;5000) mod 76543217.</p>
+</body></html>
