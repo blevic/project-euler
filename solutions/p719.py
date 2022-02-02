@@ -12,14 +12,18 @@ def split_it(s):
                 yield l1 + int(s[i:])
 
 
-total = 0
-for root in range(4, 10**6 + 1):
-    for split_sum in split_it(str(root**2)):
-        if split_sum == root:
-            t = time.time() - t0
-            print(str(t)[:7] + "s -> " + "{:.2%}".format(root/10**6) + " -> " + str(root**2))
-            total += root**2
-            break
+def slow_solution():
+    total = 0
+    for root in range(9, 10**6 + 1):
+        if root % 9 == 1 or root % 9 == 0:
+            for split_sum in split_it(str(root**2)):
+                if split_sum == root:
+                    t = time.time() - t0
+                    print(str(t)[:7] + "s -> " + "{:.2%}".format(root/10**6) + " -> " + str(root**2))
+                    total += root**2
+                    break
+    print("TOTAL: " + str(total))
 
 
-print("TOTAL: " + str(total))  # 1-2-8-0-8-8-8-3-0-5-4-7-9-8-2
+if __name__ == '__main__':
+    slow_solution()
