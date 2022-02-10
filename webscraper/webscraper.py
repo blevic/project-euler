@@ -4,7 +4,7 @@ import os
 
 cwd = os.getcwd()
 p_name = 'euler-problems'
-MAX_PROBLEM = 783
+MAX_PROBLEM = 784
 
 url = 'https://projecteuler.net/minimal='
 kwargs = {'bypass_robots': True, 'project_name': p_name, 'zip_project_folder': False}
