@@ -6,6 +6,7 @@ def is_increasing(n):
         c0 = c
     return True
 
+
 def is_decreasing(n):
     c0 = str(n)[0]
     for c in str(n):
@@ -14,11 +15,13 @@ def is_decreasing(n):
         c0 = c
     return True
 
+
 def is_bouncy(n):
     if not is_increasing(n) and not is_decreasing(n):
         return True
     else:
         return False
+
 
 if __name__ == "__main__":
     count = 0
