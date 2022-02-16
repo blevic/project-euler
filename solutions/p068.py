@@ -15,4 +15,3 @@ def calculate_max_string():
 
 if __name__ == "__main__":
     print(calculate_max_string())
-    print(None)
