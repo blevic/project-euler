@@ -1,4 +1,4 @@
-MAX_VALUE = 10**3
+MAX_VALUE = 10**8
 
 
 def is_palindrome(n):
